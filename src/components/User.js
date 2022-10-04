@@ -4,6 +4,10 @@ import classes from './User.module.css';
 
 // using extends Component on this class allows us to use and pass in props
 class User extends Component {
+  componentWillUnmount() {
+    console.log('user will unmount');
+  }
+
   render() {
     // we are only able to use "this."" is because of the extends Component
     return <li className={classes.user}>{this.props.name}</li>;
