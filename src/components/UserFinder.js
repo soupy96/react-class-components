@@ -23,6 +23,7 @@ class UserFinder extends Component {
     this.setState({ filteredUsers: DUMMY_USERS });
   }
 
+  // this component will run whenever the component like state
   componentDidUpdate(prevProps, prevState) {
     if (prevState.searchTerm !== this.state.searchTerm) {
       this.setState({
